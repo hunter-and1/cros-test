@@ -5,7 +5,7 @@ var port = process.env.PORT || 8080;
 
 var cors_proxy = require('cors-anywhere');
 cors_proxy.createServer({
-    originWhitelist: ['http://dofusports.xyz','http://roystream.com','http://volokit2.com','http://nodelaytv.pw','https://dofusports.xyz','https://roystream.com','https://volokit2.com','https://nodelaytv.pw'], // Allow all origins
+    originWhitelist: ['https://mlb.com','http://mlb.com','http://dofusports.xyz','http://roystream.com','http://volokit2.com','http://nodelaytv.pw','https://dofusports.xyz','https://roystream.com','https://volokit2.com','https://nodelaytv.pw'], // Allow all origins
     //requireHeader: ['origin', 'x-requested-with'],
     //removeHeaders: ['cookie', 'cookie2'],
     //setHeaders:{'referer':'https://mlb.com','origin':'https://mlb.com'}
