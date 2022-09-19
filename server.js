@@ -9,6 +9,9 @@ cors_proxy.createServer({
     //requireHeader: ['origin', 'x-requested-with'],
     //removeHeaders: ['cookie', 'cookie2'],
     //setHeaders:{'referer':'https://mlb.com','origin':'https://mlb.com'}
+    removeHeaders: [
+        'origin',
+    ],
 }).listen(port, host, function() {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
